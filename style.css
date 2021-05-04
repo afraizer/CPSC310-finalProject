@@ -1,3 +1,152 @@
-.form {
-  margin-left: 30px;
+body {
+  background-color: #e8eae6;
 }
+
+nav {
+  background-color: #7c9473;
+  position: fixed;
+  top: 0;
+}
+
+.newAccountButton {
+  text-align: center;
+  width: 30%;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  #newAccount {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+  }
+
+  #newAccount:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  #shippingAddress {
+    display: none;
+  }
+
+  .form {
+    margin-left: 30px;
+  }
+
+  .row {
+    padding: 5%;
+    text-align: center;
+  }
+
+  .column {
+    background-color: #cfdac8;
+    float: left;
+    width: 25%;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .open-button {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 33%;
+    background-color: #7c9473;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  form-container {
+    max-width: 30%;
+    padding: 10px;
+    border: black solid 5px;
+  }
+
+  .form-container input[type=text], .form-container inputer[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+  }
+
+  .form-container input[type=text], .form-container inputer[type=password]: focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .login {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+  }
+
+  .aboveText {
+    text-align: left;
+  }
+
+  .submitButton {
+    margin-bottom: 5%;
+  }
+
+  .newAccount {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+  }

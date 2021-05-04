@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create an account</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Ramen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="login.html">Login</a>
+          <a class="nav-item nav-link" href="Review-Form.html">Write Review</a>
+        </div>
+      </div>
+    </nav>
+
+    <form class="newAccount" action="index.html">
+      <h2>Create an account:</h2>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputUsername4">Username</label>
+        <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Primary Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>AL</option> <option>AK</option>
+          <option>AZ</option> <option>AR</option>
+          <option>CA</option> <option>CO</option>
+          <option>CT</option> <option>DE</option>
+          <option>DC</option> <option>FL</option>
+          <option>GA</option> <option>HI</option>
+          <option>ID</option> <option>IL</option>
+          <option>IN</option> <option>IA</option>
+          <option>KS</option> <option>KY</option>
+          <option>LA</option> <option>ME</option>
+          <option>MD</option> <option>MA</option>
+          <option>MI</option> <option>MN</option>
+          <option>MS</option> <option>MO</option>
+          <option>MT</option>
+          <option>NE</option> <option>NV</option>
+          <option>NH</option> <option>NJ</option>
+          <option>NM</option> <option>NY</option>
+          <option>NC</option> <option>ND</option>
+          <option>OH</option> <option>OK</option>
+          <option>OR</option> <option>PA</option>
+          <option>RI</option> <option>SC</option>
+          <option>SD</option> <option>TN</option>
+          <option>TX</option> <option>UT</option>
+          <option>VA</option> <option>WA</option>
+          <option>WV</option> <option>WI</option>
+          <option>WY</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div>
+
+<!-- NOTE: this checkbox should hide shipping address if box is unchecked,
+          but show it if the box is checked  -->
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck shipBox" onclick="checkboxCheck()">
+        <label class="form-check-label" for="gridCheck">
+          Shipping Address is differnt than primary
+        </label>
+      </div>
+    </div>
+    <!-- NOTE: This is for the shipping address
+                only appears if checkbox is selected -->
+
+    <div class="form-group" id="shippingAddress">
+      <label for="inputAddress">Shipping Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>AL</option> <option>AK</option>
+          <option>AZ</option> <option>AR</option>
+          <option>CA</option> <option>CO</option>
+          <option>CT</option> <option>DE</option>
+          <option>DC</option> <option>FL</option>
+          <option>GA</option> <option>HI</option>
+          <option>ID</option> <option>IL</option>
+          <option>IN</option> <option>IA</option>
+          <option>KS</option> <option>KY</option>
+          <option>LA</option> <option>ME</option>
+          <option>MD</option> <option>MA</option>
+          <option>MI</option> <option>MN</option>
+          <option>MS</option> <option>MO</option>
+          <option>MT</option>
+          <option>NE</option> <option>NV</option>
+          <option>NH</option> <option>NJ</option>
+          <option>NM</option> <option>NY</option>
+          <option>NC</option> <option>ND</option>
+          <option>OH</option> <option>OK</option>
+          <option>OR</option> <option>PA</option>
+          <option>RI</option> <option>SC</option>
+          <option>SD</option> <option>TN</option>
+          <option>TX</option> <option>UT</option>
+          <option>VA</option> <option>WA</option>
+          <option>WV</option> <option>WI</option>
+          <option>WY</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPhoneNumber">Phone Number</label>
+      <input type="text" class="form-control" id="inputPhoneNumber" placeholder="(123) 456-7890">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+
+
+  </body>
+</html>
